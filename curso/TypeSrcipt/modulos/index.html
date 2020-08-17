@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulos</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.0/system.js"></script>
+</head>
+<body>
+  <script>
+    SystemJS.config({
+      packages: {
+        "modulos": {
+          "main" : "main",
+          "defaultExtension": "js"
+        }
+      }
+    });
+    System.import("modulos");
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<h2 class="container bg-dark text-white text-center my-4 py-4">Angular</h2>
+
+<div class="container">
+  <app-ng-if></app-ng-if>
+  <app-ng-class></app-ng-class>
+  <h4 class="container bg-dark text-white text-center my-4 py-2">Lista desordenada</h4>
+  <ul>
+    <li *ngFor="let curso of cursos">{{curso}}</li>
+  </ul>
+  <h4 class="container bg-dark text-white text-center my-4 py-2">Tabla</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">TIPO</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">EDAD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animales; index as i">
+        <th scope="row">{{i}}</th>
+        <td>{{animal.tipo}}</td>
+        <td>{{animal.nombre}}</td>
+        <td>{{animal.edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,7 @@
+<h4 class="container bg-dark text-white text-center my-4 py-2">ngClass</h4>
+<div class="container">
+  <button class="btn btn-dark mb-3" (click)="activo='primero'">Primero</button>
+  <button class="btn btn-danger mb-3" (click)="activo='segundo'">Segundo</button>
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis iusto quam earum vero excepturi ut rerum quidem, illum recusandae pariatur tempore tempora aliquam voluptatibus, ullam repellat dolores eius asperiores ab?</p>
+  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate vero praesentium corrupti ea adipisci nostrum alias beatae odio, veniam laborum doloribus quae sed, libero optio non cumque atque? Culpa!</p>
+</div>
